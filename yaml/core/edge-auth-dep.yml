@@ -50,13 +50,11 @@ spec:
             value: "/var/secrets/public/key.pub"
           - name: private_key_path
             value: "/var/secrets/private/key"
-          - name: customers_path
-            value: "/var/secrets/of-customers/of-customers"
 # Update for your configuration:
           - name: client_secret # this can also be provided via a secret named of-client-secret
             value: ""
           - name: client_id
-            value: ""
+            value: ""11adbeebc333fe93172e""
           - name: oauth_provider_base_url
             value: "" # If you want to use GitLab, put here address of it. For example: https://gitlab.domain.com
           - name: oauth_provider
@@ -69,13 +67,13 @@ spec:
 
 # Community cluster config:
           - name: external_redirect_domain
-            value: "https://auth.system.o6s.io"
+            value: "https://auth.system.faas.testapps.stack.it.ntnu.no"
           - name: cookie_root_domain
-            value: ".system.o6s.io"
+            value: ".system.faas.testapps.stack.it.ntnu.no"
 
 # This is a default and can be overridden
           - name: customers_url
-            value: "https://raw.githubusercontent.com/openfaas/openfaas-cloud/master/CUSTOMERS"
+            value: "https://raw.githubusercontent.com/havardei/openfaas-cloud/master/CUSTOMERS"
 
           - name: write_debug
             value: "false"
